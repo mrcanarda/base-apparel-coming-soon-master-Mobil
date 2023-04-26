@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-size: 10px; */
+  
+    /* 10px / 16px = 0.625 = 62.5% */
+    /* Percentage of user's browser font-size setting */
+    font-size: 62.5%;
+    overflow-x: hidden;
+  
+    /* Does NOT work on Safari */
+    /* scroll-behavior: smooth; */
+  }
+  
+  body {
+   
+    line-height: 1;
+    font-weight: 400;
+ 
+  
+    /* Only works if there is nothing absolutely positioned in relation to body */
+    overflow-x: hidden;
+  }
+
+.section-all {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+.container-ein {
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+}
+
+.logo-img {
+    width:12rem;
+    margin: 4rem 8rem;
+    margin-bottom: 12rem;
+}
+
+.exc-head {
+    color: black;
+    width: 10%;
+    font-size: 6rem;
+    margin-left: 8rem;
+    letter-spacing: 1rem;
+}
+
+.wer {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+    letter-spacing: .8rem;
+}
+
+.explaning {
+    width: 52%;
+    line-height: 1.4;
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin-left: 8rem;
+    color: hsl(0, 36%, 70%);
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    padding: 2rem;
+    margin-left: 8rem;
+    padding-right: 18rem;
+    border-radius: 25px;
+    border: solid 0.01rem  hsl(0, 36%, 70%);
+}
+
+::placeholder {
+    color: hsl(0, 44%, 87%);
+}
+
+.ion-icon {
+    background: linear-gradient(
+        hsl(0, 80%, 86%),
+        hsl(0, 74%, 74%)
+    );
+    padding: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    z-index: 999;
+    margin-right: 20rem;
+    border-radius: 30px;
+    position: fixed; 
+    top: 70.5%;
+    bottom: 0;
+    left: 26%;
+    color: white;
+}
